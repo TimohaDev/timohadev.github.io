@@ -9,6 +9,7 @@ body {
     display: flex;
     font-family: 'Rowdies', sans-serif;
     background: url('../../img/back.png');
+    color: #fff;
 }
 .center {
     justify-content: center;
