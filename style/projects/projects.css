@@ -8,6 +8,7 @@ body {
     background-size: cover;
     display: flex;
     font-family: 'Rowdies', sans-serif;
+    background: url('../../img/back.png');
 }
 .center {
     justify-content: center;
