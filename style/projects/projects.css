@@ -9,7 +9,6 @@ body {
     display: flex;
     font-family: 'Rowdies', sans-serif;
     background: url('../../img/back.png');
-    color: #fff;
 }
 .center {
     justify-content: center;
@@ -21,7 +20,7 @@ body {
     width: 300px;
     display: flex;
     background: none;
-    color: black;
+    color: #fff;
     padding: 15px;
     border-radius: 16px; 
     -webkit-border-radius: 16px;
