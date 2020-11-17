@@ -91,6 +91,7 @@ h2 {
     border: 1px solid #383838;
     background: #fff;
     color: #000;
+    display: flex;
     z-index: 1000;
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
