@@ -3,25 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Tim's Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style/index/style.css">
 	<script src="https://kit.fontawesome.com/a28d8bfb2b.js" crossorigin="anonymous"></script>
 	<script src="https://sindresorhus.com/devtools-detect/index.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 </head>
 <body>
-	<script>
-		function is_shit() {
-			if (/MSIE/i.test(navigator.userAgent)) return true
-			if (/firefox/i.test(navigator.userAgent)) return true
-			if (/Trident/i.test(navigator.userAgent)) return true
-			if (/Edge/i.test(navigator.userAgent)) return true
-			return false
-		}
-		if (is_shit()) {
-			document.body.style.backgroundImage = "url('video/background.mp4')";
-		}
-	</script>
 	<div id="donate">
 		<div class="popup">
 			<h1>Donate</h1>
@@ -31,19 +20,12 @@
 				<p align="center">
 					<button type="button" class="btn" value="QIWI" onclick="location.href='https://qiwi.com/n/TIMOHADEN'">QIWI</button>
 				</p>
-				<!-- <p id="payeer">Payeer: P1024332345</p> -->
 				<p align="center"><button class="btn" type="button" value="Close" title="Close" onclick="document.getElementById('donate').style.display='none';">Close</button> </p>
 			</p>
 		</div>
 	</div>
 	<div class="banner">
-		<!-- 
-		<video autoplay muted loop>
-			<source src="video/background.mp4" type="video/mp4">
-		</video>
-	-->
 		<div class="content">
-			<h1>TIM'S WEBSITE</h1>
 			<section>
 			<div class="block1">
 				<img src="https://telega.one/i/userpic/320/TimaDen.jpg">
@@ -53,13 +35,13 @@
 				
 		</div>
 				<hr width="295">
+				<button type="button1" onClick="location.href = '/projects/'">Projects</button>
+				<button type="button1" onclick="document.getElementById('donate').style.display='block'">Donate</button>
+				<hr width="295">
 				<h2>Links: </h2>
 				<hr width="295">
 				
-				<button type="button1" onClick="location.href = '/projects/'">Projects</button>
-				<button type="button1" onclick="document.getElementById('donate').style.display='block'">Donate</button>
 				
-				<hr width="295">
 				<button type="button2" onClick="window.open('https://t.me/TimaDen');">Telegram</button>
 				<button type="button3" onclick="window.open('https://github.com/t1mosha');">Github</button>
 				<button type="button4" onclick="window.open('https://instagram.com/timofiyofficial');">Instagram</button>

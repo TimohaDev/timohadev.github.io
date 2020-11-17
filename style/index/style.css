@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 body{
 	background-size: cover;
 	margin: 0;
@@ -37,14 +38,7 @@ body{
 	margin: 0 auto;
 	text-align: center;
 }
-.banner .content h1
-{
-	margin: 0;
-	padding: 0;
-	font-size: 4.5em;
-	text-transform: uppercase;
-	color: #fff;
-}
+
 .banner .content p
 {
 	font-size: 1.5em;
@@ -53,7 +47,7 @@ body{
 .block1{
 	border-radius: 1.5em;
     border: blueviolet solid 1px;
-	max-width: 700px;
+	max-width: 300px;
 	padding: 50px;
 	background: rgba(255,255,255,.2);
 	box-shadow: 0 5px 15px rgba(0,0,0.5);
@@ -69,7 +63,7 @@ button{
 	color: White;
 	cursor: pointer;
 	background-color: rgba(12,12,12,.65);
-	font-family: monospace;
+	font-family: Source code pro;
 	border-color: blueviolet;
 	border-width: 1px;
 	min-width: 150px;
