@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>1</title>
+    <link rel="stylesheet" href="../style/ny/ny.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body onload="time()">
+
+  <div id="garland" class="garland_4"><div id="nums_1">1</div></div><div style="position:absolute;top:-1000px"><a href="/publ/7" title="шаблоны для ucoz">ucoz шаблоны</a></div>
+  <h1>Обратный отсчет времени</h1>
+  <p>До нового года осталось <span id="t" style="font-size:20px"></span></p>
+  <script>
+    timeend= new Date();
+
+    timeend= new Date(timeend.getYear()>1900?(timeend.getYear()+1):(timeend.getYear()+1901),0,1);
+
+    function time() {
+        today = new Date();
+        today = Math.floor((timeend-today)/1000);
+        tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+        tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+        thour=today%24; today=Math.floor(today/24);
+        timestr=today +" дней "+ thour+" часов "+tmin+" минут "+tsec+" секунд";
+        document.getElementById('t').innerHTML=timestr;
+        window.setTimeout("time()",1000);
+    }
+  </script>
+  <script src='../js/snowfall.js'></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          $(document).snowfall({image :"../img/flake.png", minSize: 10, maxSize:20});
+      });
+  </script>
+  <script type="text/javascript">
+  function garland() {
+  nums = document.getElementById('nums_1').innerHTML
+  if(nums == 1) {document.getElementById('garland').className='garland_1';document.getElementById('nums_1').innerHTML='2'}
+  if(nums == 2) {document.getElementById('garland').className='garland_2';document.getElementById('nums_1').innerHTML='3'}
+  if(nums == 3) {document.getElementById('garland').className='garland_3';document.getElementById('nums_1').innerHTML='4'}
+  if(nums == 4) {document.getElementById('garland').className='garland_4';document.getElementById('nums_1').innerHTML='1'}
+  }
+
+  setInterval(function(){garland()}, 600)
+  </script>
+</html>
