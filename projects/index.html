@@ -13,15 +13,16 @@
 		<script src="https://sindresorhus.com/devtools-detect/index.js"></script>
         <meta name="theme-color" content="#C21CC7">
 		<link rel="stylesheet" href="../style/projects/projects.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	</head>
 	<body class="center">
         <div id="1" style="display: none;">
             <div class="popup">
                 <h1>Сайт</h1>
                 <hr width="295">
-                <p align="center">                    
+                <p align="center">
                     <p align=center>
-						Сайт мой блог 
+						Сайт мой блог
 					</p>
                     <p align="center">
 						<input class="btn" type="button" value="Перейти" title="Перейти" onclick="location.href='https://timoha.site'">
@@ -34,7 +35,7 @@
             <div class="popup">
                 <h1>VedmakGameBot</h1>
                 <hr width="295">
-                <p align="center">                    
+                <p align="center">
                     <p align=center>
 						Изначально я думал что это будет простая рпгшка в телеграме, но потом что-то на неё закинул, если есть идеи как доделать игру, то предлагайте мне в ЛС
 					</p>
@@ -49,7 +50,7 @@
             <div class="popup">
                 <h1>News from Timoxa</h1>
                 <hr width="295">
-                <p align="center">                    
+                <p align="center">
                     <p align=center>
 						Я его не закончил ещё..
 					</p>
@@ -64,7 +65,7 @@
             <div class="popup">
                 <h1>TACompany</h1>
                 <hr width="295">
-                <p align="center">                    
+                <p align="center">
                     <p align=center>
 						TACompany - студия разработки IT проектов. Разрабатывает ботов, простые сайты (сайты визитки)
 					</p>
@@ -85,4 +86,10 @@
             <a href="..">Go back</a>
 		</div>
     </body>
+		<script src='../js/snowfall.js'></script>
+		<script type="text/javascript">
+				$(document).ready(function(){
+						$(document).snowfall({image :"../img/flake.png", minSize: 10, maxSize:20});
+				});
+		</script>
 </html>

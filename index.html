@@ -15,7 +15,7 @@
 		<div class="popup">
 			<h1>Donate</h1>
 			<p align="center">
-				<h3><span class="font-size=larger">❤️На мрію</span></h3>                    
+				<h3><span class="font-size=larger">❤️На мрію</span></h3>
 				<h2>Select payment method</h2>
 				<p align="center">
 					<button type="button" class="btn" value="QIWI" onclick="location.href='https://qiwi.com/n/TIMOHADEN'">QIWI</button>
@@ -36,7 +36,7 @@
 				<hr width="295">
 				<div class="text">
 				<h3><span id="description"></span></h3>
-				
+
 		</div>
 				<hr width="295">
 				<button type="button1" onClick="location.href = '/projects/'">Projects</button>
@@ -44,8 +44,8 @@
 				<hr width="295">
 				<h2>Links: </h2>
 				<hr width="295">
-				
-				
+
+
 				<button type="button2" onClick="window.open('https://t.me/TimaDen');">Telegram</button>
 				<button type="button3" onclick="window.open('https://github.com/t1mosha');">Github</button>
 				<button type="button4" onclick="window.open('https://instagram.com/timofiyofficial');">Instagram</button>
@@ -53,15 +53,12 @@
 			</div>
 		</section>
 </body>
-<script>
-	var t = new Typed('#description', {
-		strings: ['Timothy', '14 years old, grade 9', 'I write bots, sites, I also do arduino', 'love coding', 'Слава Україні!'],
-		typeSpeed: 100,
-		backSpeed: 0,
-		cursorChar: '|',
-		smartBackspace: true,
-		fadeOut: true,
-		loop: true
-	});
+
+<script src='js/description.js'></script>
+<script src='js/snowfall.js'></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+				$(document).snowfall({image :"img/flake.png", minSize: 10, maxSize:20});
+		});
 </script>
 </html>

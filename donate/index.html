@@ -13,6 +13,7 @@
 		<script src="https://sindresorhus.com/devtools-detect/index.js"></script>
         <meta name="theme-color" content="#C21CC7">
 		<link rel="stylesheet" href="../style/donate/donate.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	</head>
 	<body class="center">
         <div id="1" style="display: none;">
@@ -50,7 +51,13 @@
             <a href="javascript:/" onclick="document.getElementById('1').style.display='block'">QIWI</a>
             <hr width="295">
             <a href="javascript:/" onclick="document.getElementById('2').style.display='block'">monobank</a>
-          
+
         </div>
     </body>
+		<script src='../js/snowfall.js'></script>
+		<script type="text/javascript">
+				$(document).ready(function(){
+						$(document).snowfall({image :"../img/flake.png", minSize: 10, maxSize:20});
+				});
+		</script>
 </html>
